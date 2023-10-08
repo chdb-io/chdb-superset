@@ -14,7 +14,7 @@ Once all services are started, initialize the system and add an `admin` user
 
 ```
 docker exec -ti superchdb superset-init
-docker exec -ti superchdb superset import_datasources -p /etc/chdb-database.yml
+docker exec -ti superchdb superset import_datasources -p /etc/chdb.yml
 ```
 
 ### Configuration
