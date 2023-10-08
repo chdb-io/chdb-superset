@@ -1,0 +1,42 @@
+version: '3'
+services:
+  superset:
+    image: qxip/superchdb
+    container_name: superchdb
+    restart: always
+    depends_on:
+      - redis
+    environment:
+      MAPBOX_API_KEY: ${MAPBOX_API_KEY}
+      SUPERSET_HOME: /etc/superset
+      TALISMAN_ENABLED: false
+      CONTENT_SECURITY_POLICY_WARNING: false
+      SUPERSET_SECRET_KEY: chdb
+    ports:
+      - "8088:8088"
+    expose:
+      - 8088
+    volumes:
+      - ./include/superset_config.py:/etc/superset/superset_config.py
+      - superset:/var/lib/superset
+
+  chdb:
+    image: ghcr.io/chdb-io/chdb-server:latest
+    container_name: chdb
+    restart: always
+    expose:
+      - 8123
+    volumes:
+      - chdb:/data
+    environment:
+      DATA: /data
+
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - redis:/data
+volumes:
+  superset:
+  redis:
+  chdb:
