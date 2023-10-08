@@ -1,6 +1,6 @@
-# chdb + superset
+# <img src="https://avatars.githubusercontent.com/u/132536224?s=48&v=4" /> chdb + superset
 
-Demo chdb + Apache Superset
+Docker demo showcasing chdb + Apache Superset connectivity
 
 ## Usage
 Clone this repository and use docker compose to initialize the demo
