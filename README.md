@@ -36,3 +36,14 @@ clickhousedb://chdb:8123/database?secure=false
 
 ![image](https://github.com/chdb-io/chdb-superset-demo/assets/1423657/d28d3b56-0d36-4d34-a24c-a0b8e2a1491d)
 
+
+
+<br>
+
+#### Preset.io
+When using chdb securely with preset.io Superset, configure `ClickHouse Connect` as follows:
+
+##### SQLALCHEMY URI
+```
+clickhouse+http://chdb.fly.dev:443/db?protocol=https
+```
