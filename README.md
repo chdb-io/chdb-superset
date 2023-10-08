@@ -2,7 +2,7 @@
 
 Docker demo showcasing chdb + Apache Superset connectivity
 
-## Usage
+## Setup
 Clone this repository and use docker compose to initialize the demo
 
 ```
@@ -29,3 +29,10 @@ chdb
 ```
 clickhousedb://chdb:8123/database?secure=false
 ```
+
+### Usage
+
+![image](https://github.com/chdb-io/chdb-superset-demo/assets/1423657/0f62c46b-e689-4a98-9c6a-da6f29367658)
+
+![image](https://github.com/chdb-io/chdb-superset-demo/assets/1423657/d28d3b56-0d36-4d34-a24c-a0b8e2a1491d)
+
