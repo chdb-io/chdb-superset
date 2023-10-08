@@ -2,7 +2,7 @@
 
 Docker demo showcasing chdb + Apache Superset connectivity
 
-## Setup
+### Instructions
 Clone this repository and use docker compose to initialize the demo
 
 ```
@@ -10,7 +10,7 @@ docker compose pull
 docker compose up -d
 ```
 
-Once all services are started, initialize the system and add an admin user
+Once all services are started, initialize the system and add an `admin` user
 
 ```
 docker exec -ti superchdb superset-init
