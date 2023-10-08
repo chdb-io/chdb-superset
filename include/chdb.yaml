@@ -1,0 +1,16 @@
+database_name: chdb
+sqlalchemy_uri: clickhousedb://superset:XXXXXXXXXX@chdb:8123/database?secure=false
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_csv_upload: false
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_csv_upload: []
+uuid: 854d8d5b-50a6-418d-afe4-c6ce75d603eb
+version: 1.0.0
